@@ -42,42 +42,102 @@ function myFunction() {
     
 <!DOCTYPE html>
 <html>
-<body>
-
-<img src="images/ferrero.jfif" alt="Trulli" width="500" height="333"> <img src="images/mack.jpg" alt="Trulli" width="500" height="333">
-<img src="images/jewels.jpg" alt="Trulli" width="500" height="333"> <img src="images/miranda.jpg" alt="Trulli" width="500" height="333">
-
-
-
-</body>
-</html>
-    
-<html>
 <head>
 <style>
-a:link, a:visited {
-  background-color: #f44336;
-  color: white;
-  padding: 14px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+div.gallery {
+  border: 1px solid #ccc;
 }
 
-a:hover, a:active {
-  background-color: red;
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 </head>
 <body>
 
 
+<h4 style="color:darkviolet" align="center">التوصيل في نفس اليوم</h4>
 
-    
-<a  href="end.html" target="_blank">التالي</a>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/ferrero.jfif">
+      <img src="images/ferrero.jfif" alt="Cinque Terre" width="600" height="400">
+    </a>
+    <div style="color: palevioletred" class="desc">فريرو</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/jewels.jpg">
+      <img src="images/jewels.jpg" alt="Forest" width="600" height="400">
+    </a>
+    <div style="color: palevioletred" class="desc">جالكسي</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/mack.jpg">
+      <img src="images/mack.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div style="color: palevioletred" class="desc">ماك</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/miranda.jpg">
+      <img src="images/miranda.jpg" alt="Mountains" width="600" height="400">
+    </a>
+    <div style="color: palevioletred" class="desc">حمضيات</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
 
 </body>
 </html>
-
 
     
